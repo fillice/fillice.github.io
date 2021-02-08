@@ -1,0 +1,184 @@
+<HTML><HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<TITLE>Yeah Still</TITLE>
+
+<script language="JavaScript">
+<!--
+
+function AW_SlideLayer(layerName,x,y,step,delay,NSpath,IEpath) 
+       { //v1.0
+	var isNav, isIE 	
+	if (parseInt(navigator.appVersion) >= 4) { 	
+	   if (navigator.appName == 'Netscape') { 	
+	      isNav = true 	
+	   } else { 		
+	      isIE = true 	
+	   } 				
+	} 					
+	if(NSpath =='') {	
+		if(isIE){ eval('var theLayer='+layerName)}	
+		else{ eval('var theLayer=document.'+layerName)	}
+		}	
+	else{	
+		if(isIE){ eval('var theLayer='+IEpath)}	
+		else{ eval('var theLayer='+NSpath)	}
+		}	
+		var changed=false 
+							
+	if(isNav){		
+		if(eval(theLayer.moving)) { clearTimeout(theLayer.timerid) }	
+  							
+		if(theLayer.left > x) { theLayer.left-=eval(step); changed=true } 	
+		if(theLayer.left < x) { theLayer.left+=eval(step); changed=true } 	
+		if(theLayer.top > y) { theLayer.top-=eval(step); changed=true }  	
+		if(theLayer.top < y) { theLayer.top+=eval(step); changed=true } 	
+		if (changed){   
+			theLayer.moving = true   
+			theLayer.timerid = setTimeout('AW_SlideLayer("'+layerName+'","'+x+'","'+y+'","'+step+'","'+delay+'","'+NSpath+'","'+IEpath+'")',delay)	
+	 
+			} 
+		else {theLayer.moving=false}  
+		 
+		} 
+	else{		
+		if(eval(theLayer.moving)) { clearTimeout(theLayer.timerid) }	
+  							
+		if(theLayer.style.pixelLeft > x) { theLayer.style.pixelLeft-=eval(step); changed=true } 	
+		if(theLayer.style.pixelLeft < x) { theLayer.style.pixelLeft+=eval(step); changed=true } 	
+		if(theLayer.style.pixelTop > y) { theLayer.style.pixelTop-=eval(step); changed=true }  	
+		if(theLayer.style.pixelTop < y) { theLayer.style.pixelTop+=eval(step); changed=true } 	
+		if (changed){   
+			theLayer.moving = true   
+			theLayer.timerid = setTimeout('AW_SlideLayer("'+layerName+'","'+x+'","'+y+'","'+step+'","'+delay+'","'+NSpath+'","'+IEpath+'")',delay)	
+			} 
+		else {theLayer.moving=false}  
+		 
+		} 
+	document.MM_returnValue=false;	
+	theLayer.document.MM_returnValue=false; 
+}
+
+function AW_SlideLayerStop(layerName,NSpath,IEpath) { //v1.0
+	var isNav, isIE 	
+	if (parseInt(navigator.appVersion) >= 4) { 	
+	   if (navigator.appName == 'Netscape') { 	
+	      isNav = true 	
+	   } else { 		
+	      isIE = true 	
+	   } 				
+	} 					
+	if(NSpath =='') {	
+		if(isIE){ eval('var theLayer='+layerName)}	
+		else{ eval('var theLayer=document.'+layerName)	}
+		}	
+	else{	
+		if(isIE){ eval('var theLayer='+IEpath)}	
+		else{ eval('var theLayer='+NSpath)	}
+		}	
+		var changed=false 
+							
+	if(isNav){		
+		if(eval(theLayer.moving)) { clearTimeout(theLayer.timerid) }	
+  							
+		if (changed){   
+			theLayer.moving = true   
+	 			
+			} 
+		else {theLayer.moving=false}  
+		 
+		} 
+	else{		
+		if(eval(theLayer.moving)) { clearTimeout(theLayer.timerid) }	
+  							
+		if (changed){   
+			theLayer.moving = true   
+			} 
+		else {theLayer.moving=false}  
+		 
+		} 
+	document.MM_returnValue=false;	
+	theLayer.document.MM_returnValue=false; 
+}
+//-->
+</script>
+
+<STYLE type=text/css>A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: none
+}
+</STYLE>
+
+<style>   
+<!--
+body, table, tr, td, select,input,div,form,textarea {
+font-family: 굴림, 돋움, verdana;
+font-size:9pt;  line-height: 12pt;
+}
+-->
+</style>
+
+</HEAD>
+<BODY bgcolor="#000000" background="image/stillbar.jpg" aLink=red link=black text=yellow vLink=black>
+
+
+
+<div style="position:absolute; left:18px; top:308px; width:300px; height:323px;" id="down"> 
+  <table border="0" cellpadding="0" cellspacing="0" height="1%">
+    <tr> 
+     
+      <td height="32">
+        <div align="center"><a href="#" onMouseOver="AW_SlideLayer('YeahStill','233','-979','2','','','')" onMouseOut="AW_SlideLayerStop('YeahStill','','');return document.MM_returnValue"><img src="image/scrolldown.gif" width=26 height=21 border="0"><br>
+          <font color="#FFFFFF">down</font></a></div>
+      </td>
+    </tr>
+    
+    <tr> 
+      <td height="22">
+        <div align="center"><a href="#" onMouseOver="AW_SlideLayer('YeahStill','233','140','50','','','')" onMouseOut="AW_SlideLayerStop('YeahStill','','');return document.MM_returnValue"><img src="image/scrollup.gif" width=26 height=22 border="0"><br>
+          <font color="#FFFFFF">top</font></a></div>
+      </td>
+    </tr>
+  </table>
+  <div align="right"></div>
+  <div align="left"><font size="2" color="#000000"><br>
+    <font color="#FFCC00">화살표에 마우스를 <br>
+    올려놓으면 자동으로<br>
+    스크롤 됩니다.</font></font></div>
+</div>
+
+
+
+
+<div id="YeahStill" style="position:absolute; left:233px; top:140px; width:300px; height:323px;">
+
+
+
+
+<P align=center><B>애니메이션 "예 ver 0.6"의 스틸 사진들 입니다.</B></p>
+<P align=center>&nbsp;</P>
+<P align=center><IMG border=0 height=240 src="image/yeah1b.jpg" 
+width=320></P>
+  <P align=center>이호가 처음 여자를 보고 반하는 장면.</P>
+<P align=center>(뒤에서 놀라고 있는 것이 이호)</P>
+<P align=center><IMG border=0 height=240 src="image/yeah2b.jpg" 
+width=320></P>
+<P align=center>여자에게 줄 꽃을 따다가 절벽에서 떨어지는 이호.</P>
+<P align=center><IMG border=0 height=240 src="image/yeah3b.jpg" 
+width=320></P>
+<P align=center>이호의 짝사랑 상대인 그녀.</P>
+<P align=center><IMG border=0 height=240 src="image/yeah4b.jpg" 
+width=320></P>
+  <P align=center> 돌연 나타나 도시를 파괴하는 로봇.</p>
+  <br>
+
+
+
+</div>
+
+
+</BODY></HTML>

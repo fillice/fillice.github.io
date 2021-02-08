@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>Winds Search</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+<!--
+A:link {text-decoration:none}
+A:visited {text-decoration:none}
+A:active {text-decoration:none}
+A:hover {color:#FFCC00; text-decoration:none}
+
+body, table, tr, td, select,input,div,form,textarea {
+font-family: 굴림, 돋움, verdana;
+font-size:9pt;  line-height: 12pt;
+}
+-->
+</style>
+
+<SCRIPT language=JavaScript>
+<!--
+function searchsite(site){
+  var word = ftxt.value;
+  var url = site+word;
+  if(site=='http://site address'){
+    url = url + 'add text';
+  }
+  if(site=='http://preview.britannica.co.kr/search/s97_utf8.exe?QueryText='){
+    url = url + '&DBase=Articles';
+  }
+  RemoteWindow2(url);
+}
+
+function searchsiteURI01(site){
+  var word = ftxt.value;
+  var wordA = encodeURIComponent(word);
+  var url = site+wordA;
+  RemoteWindow2(url);
+}
+
+function searchsite2(site2){
+  var word2 = ftxt2.value;
+  var url2 = site2+word2;
+
+  if (site2 == 'http://preview.britannica.co.kr/search/s97_utf8.exe?QueryText='){
+    url2 = url2 + '&DBase=Articles';
+  }
+  RemoteWindow2(url2);
+}
+
+function searchsiteURI02(site2){
+  var word2 = ftxt2.value;
+  var word2A = encodeURIComponent(word2);
+  var url2 = site2+word2A;
+
+  RemoteWindow2(url2);
+}
+
+function RemoteWindow( url ){
+  window.open( url, 'PreviewWin','width=800,height=600,resizable=yes,scrollbars=yes,status=yes');
+}
+
+function RemoteWindow2( url2 ){
+  window.open( url2, 'PreviewWin2','width=800,height=800,resizable=yes,scrollbars=yes,status=yes, statusbar=yes');
+}
+
+function newin(width,height,url,name){
+  msgWindow=window.open(url,name,'statusbar=yes,location=no,scrollbars=no,status=yes,resizable=yes,width='+width+',height='+height+', fullscreen=yes')
+}
+ -->
+</SCRIPT>
+
+
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" link="#666666" vlink="#666666" alink="#FF3333">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td height="415"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td> <div align="center"> 
+              <p>&nbsp;</p>
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><table bgcolor=#000000 border=1 bordercolor=white cellpadding=5 
+      cellspacing=1 width=300 height="137">
+                      <tbody>
+                        <tr bgcolor="#666666"> 
+                          <td colspan="2" align=middle 
+          bordercolorlight=#c0c0fe bordercolordark=white> <div align="center"><font color=#000000> 
+                              <font color="#FFFFFF">Wind's Cool Search 1(크롬,파이어폭스용)</font></font></div></td>
+                        </tr>
+                        <tr> 
+                          <td bgcolor=#f4f4f4 height=47 valign=top colspan="2"> 
+                            <div align="left">
+                              <input class=editbox name=ftxt id="ftxt" size=27>
+                              &nbsp;
+                              ◀<font color=red><font color="#333333">검색어 입력</font></font> 
+                            </div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td bgcolor=#f4f4f4 height=112 valign=top width="120">
+                            <div onClick=searchsite("http://search.naver.com/search.naver?query=")>네이버</div>
+                            <div onClick=searchsiteURI01("http://www.google.co.kr/search?hl=ko&q=")>구글 코리아</div>
+                            <div onClick=searchsiteURI01("http://search.nate.com/search/all.html?z=A&s=&tq=&sc=&afc=&q=")>네이트</div>
+                            <div onClick=searchsiteURI01("http://search.yahoo.com/search?p=")>Yahoo US(US)</div>
+                            <div onClick=searchsiteURI01("http://search.yahoo.co.jp/search?p=")>Yahoo Japan(J)</div><br>
+                            <div onClick=searchsiteURI01("http://images.google.co.kr/images?q=")>Google 이미지</div>
+                            <div onClick=searchsite("http://imagesearch.naver.com/search.naver?where=image&query=")>네이버 이미지</div><br>
+                            <div onClick=searchsiteURI01("http://www.youtube.com/results?search_query=")>YouTube(US)</div>
+                            <div onClick=searchsiteURI01("http://www.nicovideo.jp/search/")>니코니코 동화(J)</div><br>
+                            <div onClick=searchsite("http://search.simfile.chol.com/search.php?wh=total&SelectBoxID=total&q=")>심파일 프로그램</div><br>
+                            <div onClick=searchsite("http://www.imdb.com/find?q=")>IMDB(US)</div>
+                          </td>
+                          <td bgcolor=#f4f4f4 height=112 valign=top width="133"> 
+                            <div onClick=searchsiteURI01("http://ko.wikipedia.org/w/index.php?search=")>위키백과</div>
+                            <div onClick=searchsiteURI01("http://en.wikipedia.org/w/index.php?title=Special%3ASearch&search=")>wikipedia(US)</div>
+                            <div onClick=searchsiteURI01("http://mirror.enha.kr/wiki/")>엔하위키 미러</div>
+                            <div onClick=searchsiteURI01("http://www.wolframalpha.com/input/?i=")>WolframAlpha(US)</div><br>
+                            <div onClick=searchsiteURI01("http://dic.naver.com/endic?query=")> 네이버 영한사전</div>
+                            <div onClick=searchsite("http://100.naver.com/search.naver?where=100&query=")> 네이버 백과사전</div> 
+                            <div onClick=searchsite("http://preview.britannica.co.kr/search/s97_utf8.exe?QueryText=")>브리태니커 온라인</div><br>
+                            <div onClick=searchsite("http://kitchen.naver.com/search/?keyword=")> 네이버키친</div><br>
+                            <a href="htm-etc2/sicha.htm" target="_blank">시차정보</a><br>
+                            <a href="http://dic.nate.com/" target="_blank">네이트 사전(국/영/일<font color="#6666FF">)</font></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table></td>
+                  <td><table bgcolor=#000000 border=1 bordercolor=white cellpadding=5 
+      cellspacing=1 width=300 height="137">
+                      <tbody>
+                        <tr bgcolor="#333333"> 
+                          <td colspan="2" align=middle 
+          bordercolorlight=#c0c0fe bordercolordark=white> <div align="center"><font color=#000000> 
+                              <font color="#FFFFFF">Wind's Cool Search 2(인터넷 익스플로러용)</font></font></div></td>
+                        </tr>
+                        <tr> 
+                          <td bgcolor=#f4f4f4 height=47 valign=top colspan="2"> 
+                            <div align="left">
+                              <input class=editbox name=ftxt2 size=27>
+                              &nbsp;◀<font 
+            color=red> <font color="#333333">검색어 입력</font></font> </div></td>
+                        </tr>
+                        <tr> 
+                          <td bgcolor=#f4f4f4 height=112 valign=top width="120"> 
+                            <p> <a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsite2(site2) title=네이버검색 
+            site2="http://search.naver.com/search.naver?query=">네이버</a><br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsiteURI02(site2) title=구글 코리아검색코리아검색http://www.google.co.kr/search?hl=ko&q=코리아검색 
+            site2="http://www.google.co.kr/search?hl=ko&q=">구글 코리아</a><br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsiteURI02(site2) title=네이트검색 
+            site2="http://search.nate.com/search/all.html?z=A&s=&tq=&sc=&afc=&q=">네이트</a><br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#"  
+            onClick=searchsiteURI02(site2) title=Yahoo US 검색BASE.html
+            site2="http://search.yahoo.com/search?p=">Yahoo US(US)</a><br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsiteURI02(site2) title=Yahoo Japan 
+            site2="http://search.yahoo.co.jp/search?p=">Yahoo Japan(J)</a>
+<p><a href="http://www.windsworld.co.kr/search2b.htm#"  
+            onClick=searchsiteURI02(site2) title=구글 이미지
+            site2="http://images.google.co.kr/images?q=">Google 이미지</a><br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#"  
+            onClick=searchsite2(site2) title=네이버 이미지
+            site2="http://imagesearch.naver.com/search.naver?where=image&query=">네이버 
+                              이미지</a> 
+                            <p><a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsiteURI02(site2) title=YouTube 
+            site2="http://www.youtube.com/results?search_query=">YouTube 동영상(US)</a><br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsiteURI02(site2) title=YouTube 
+            site2="http://www.nicovideo.jp/search/">니코니코 동화(J)</a></p>
+                            <p><a href="http://www.windsworld.co.kr/search2b.htm#"  
+            onClick=searchsite2(site2) title=심파일 프로그램
+            site2="http://search.simfile.chol.com/search.php?wh=total&SelectBoxID=total&q=">심파일 
+                              프로그램</a> </p>
+                            <p><a href="http://www.windsworld.co.kr/search2b.htm#"  
+            onClick=searchsite2(site2) title=IMDB 검색BASE.html 
+            site2="http://www.imdb.com/find?s=all&q=">IMDB(US)</a></p></td>
+                          <td bgcolor=#f4f4f4 height=112 valign=top width="133"> 
+                            <p><a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsiteURI02(site2) title=위키백과 
+            site2="http://ko.wikipedia.org/w/index.php?search=">위키백과</a><br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsiteURI02(site2) title=wikipedia 
+            site2="http://en.wikipedia.org/w/index.php?title=Special%3ASearch&search=">wikipedia(US)</a><br>
+            <a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsiteURI02(site2) title=wikipedia 
+            site2="http://mirror.enha.kr/wiki/">엔하위키 미러</a><br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#" 
+            onClick=searchsiteURI02(site) title=wolfram 
+            site="http://www.wolframalpha.com/input/?i=">WolframAlpha(US)</a></p>
+                            <p><a href="http://www.windsworld.co.kr/search2b.htm#"  
+            onClick=searchsite2(site2) title=네이버 영한사전 
+            site2="http://dic.naver.com/endic?query="> 네이버 영한사전</a><br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#"  
+            onClick=searchsite2(site2) title=네이버 백과사전 
+            site2="http://100.naver.com/search.naver?where=100&query="> 네이버 백과사전</a> 
+                              <br>
+                              <a href="http://www.windsworld.co.kr/search2b.htm#"  
+            onClick=searchsite2(site2) title=Britannica 
+			site2="http://preview.britannica.co.kr/search/s97_utf8.exe?QueryText=">브리태니커 
+                              온라인</a></p>
+                            <p><a href="http://www.windsworld.co.kr/search2b.htm#"  
+            onClick=searchsite2(site2) title=네이버키친
+            site2="http://kitchen.naver.com/search/?keyword="> 네이버키친</a></p>
+                            <p><a href="htm-etc2/sicha.htm" target="_blank">시차정보</a><br>
+                              <a href="http://dic.nate.com/" target="_blank">네이트 
+                              사전(국/영/일<font color="#6666FF">)</font></a></p>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table></td>
+                </tr>
+              </table>
+              <font color="#666666">US:영어 검색, J: 일본어 검색</font><br>
+              <p><a href="search.htm" target="_self"><font color="#CCCCCC">.</font></a> 
+                <a href="search2.htm"><font color="#CCCCCC">.</font></a></p>
+            </div></td>
+        </tr>
+        <tr> 
+          <td> <div align="center"> 
+              <p><font color="#FFFFFF"> </font></p>
+            </div></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>
